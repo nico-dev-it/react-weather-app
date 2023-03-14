@@ -20,7 +20,7 @@ const Weather = () => {
 
     return (
         <div class="formContainer">
-            <h1>Weather</h1>
+            <h1>WEATHER</h1>
             <form>
                 <input type="text" name="city" placeholder="city" onChange={event => handleChange(event)}/>
                 <input type="text" name="country" placeholder="country" onChange={event => handleChange(event)}/>
