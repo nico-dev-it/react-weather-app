@@ -6,6 +6,8 @@ const DisplayWeather = (props) => {
     const sunrise = new Date(sunriseUnix * 1000)
     const sunsetUnix = props.data.sys.sunset
     const sunset = new Date(sunsetUnix * 1000)
+    const weatherIcon = "https://openweathermap.org/img/wn/" + `${props.data.weather[0].icon}` + ".png"
+
 
     return (
         <div>
@@ -24,6 +26,10 @@ const DisplayWeather = (props) => {
                 </div>
             </div>
             <div className="detailedWeatherData">
+                <div className="otherWeatherCard">
+                    <p>Currently</p>
+                    <img src={weatherIcon}/>
+                </div>
                 <div className="otherWeatherCard">
                     <p>Wind</p>
                     <p><span class="weatherData">{Math.round(props.data.wind.speed)}</span></p>

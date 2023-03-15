@@ -36,6 +36,10 @@
     margin: 5px;
 }
 
+.otherWeatherCard img {
+    height: 80px;
+}
+
 .sunsetCard {
     background: #e96443;
     background: -webkit-linear-gradient(to right, #904e95, #e96443);
