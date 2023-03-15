@@ -3,7 +3,8 @@ import {useState} from "react";
 import DisplayWeather from "./displayWeather";
 
 const Weather = () => {
-
+    const ApiKey = "6c4e5054f38eb57a9893beaa278e8ec8"
+    
     const [form, setForm] = useState({city: "", country:""})
 
     const handleChange = (event) => {
