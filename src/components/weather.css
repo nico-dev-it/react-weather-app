@@ -9,7 +9,10 @@
 
 form {
     display: flex;
-    gap: 10px;
+    width: 50vw;
+    padding-bottom: 20px;
+    border-bottom: 2px solid #ffffff;
+    justify-content: space-evenly;
 }
 
 input[type=text] {
