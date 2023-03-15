@@ -1,4 +1,6 @@
 import './displayWeather.css'
+import { BsFillSunriseFill } from 'react-icons/bs';
+import { BsFillSunsetFill } from 'react-icons/bs';
 
 const DisplayWeather = (props) => {
     console.log(props)
@@ -63,10 +65,12 @@ const DisplayWeather = (props) => {
                 <div className="sunriseCard">
                     <p>Sunrise</p>
                     <p>{sunrise.toLocaleTimeString("en-GB", {timeStyle: 'short'})}</p>
+                    <BsFillSunriseFill />
                 </div>
                 <div className="sunsetCard">
                     <p>Sunset</p>
                     <p>{sunset.toLocaleTimeString("en-GB", {timeStyle: 'short'})}</p>
+                    <BsFillSunsetFill />
                 </div>
             </div>
         </div>
