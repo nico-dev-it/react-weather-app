@@ -41,6 +41,11 @@ const DisplayWeather = (props) => {
                     <p>%</p>
                 </div>
                 <div className="otherWeatherCard">
+                    <p>Pressure</p>
+                    <p><span className="weatherData">{props.data.main.pressure}</span></p>
+                    <p>hpa</p>
+                </div>
+                <div className="otherWeatherCard">
                     <p>Visibility</p>
                     <p><span className="weatherData">{Math.round(props.data.visibility) / 1000}</span></p>
                     <p>km</p>
