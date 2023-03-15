@@ -9,8 +9,8 @@ const DisplayWeather = (props) => {
                 <p><span>{props.data.sys.country}</span></p>
             </div>
             <div className="mainWeatherCard">
-                <p><span>Temp</span></p>
-                <p><span>H: L:</span></p>
+                <p><span>{props.data.main.temp}</span></p>
+                <p><span>H:{props.data.main.temp_max} L:{props.data.main.temp_min}</span></p>
             </div>
         </div>
     )
