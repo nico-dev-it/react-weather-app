@@ -1,5 +1,6 @@
 import './weather.css'
 import {useState} from "react";
+import DisplayWeather from "./displayWeather";
 
 const Weather = () => {
 
@@ -26,6 +27,7 @@ const Weather = () => {
                 <input type="text" name="country" placeholder="country" onChange={event => handleChange(event)}/>
                 <button type="submit">Submit</button>
             </form>
+            <DisplayWeather />
         </div>
     )
 }
