@@ -23,7 +23,7 @@ const Weather = () => {
 
     async function weatherData(event) {
         event.preventDefault()
-        const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&appid=${ApiKey}`)
+        const data = await fetch(`https://api.openweathermap.org/data/2.5/weather?q=${form.city},${form.country}&appid=${ApiKey}&units=metric`)
             .then((response) => response.json())
             .then((data) => data)
         setWeather(
