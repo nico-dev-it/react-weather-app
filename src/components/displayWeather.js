@@ -1,11 +1,12 @@
 import './displayWeather.css'
 
-const DisplayWeather = () => {
+const DisplayWeather = (props) => {
+    console.log(props)
     return (
         <div className="weatherContainer">
             <div className="locationCard">
-                <p><span>City</span></p>
-                <p><span>Country</span></p>
+                <p><span>{props.data.name}</span></p>
+                <p><span>{props.data.sys.country}</span></p>
             </div>
             <div className="mainWeatherCard">
                 <p><span>Temp</span></p>
