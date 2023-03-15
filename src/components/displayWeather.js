@@ -18,16 +18,29 @@ const DisplayWeather = (props) => {
                     <p><span>Feels like: {Math.round(props.data.main.feels_like)}°</span></p>
                 </div>
             </div>
-            <div>
-                <div className="otherWeatherData">
+            <div className="detailedWeatherData">
+                <div className="otherWeatherCard">
                     <p>Wind</p>
                     <p><span class="weatherData">{Math.round(props.data.wind.speed)}</span></p>
                     <p>m/s</p>
                 </div>
-                <div className="otherWeatherData">
+                <div className="otherWeatherCard">
                     <p>Humidity</p>
-                    <p><span className="weatherData">{Math.round(props.data.wind.speed)}</span></p>
-                    <p>m/s</p>
+                    <p><span className="weatherData">{props.data.main.humidity}</span></p>
+                    <p>%</p>
+                </div>
+                <div className="otherWeatherCard">
+                    <p>Visibility</p>
+                    <p><span className="weatherData">{Math.round(props.data.visibility) / 1000}</span></p>
+                    <p>km</p>
+                </div>
+                <div className="otherWeatherCard">
+                    <p>Sunrise</p>
+                    <p></p>
+                </div>
+                <div className="otherWeatherCard">
+                    <p>Sunset</p>
+                    <p></p>
                 </div>
             </div>
         </div>
