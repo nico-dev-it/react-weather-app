@@ -4,6 +4,8 @@ const DisplayWeather = (props) => {
     console.log(props)
     const sunriseUnix = props.data.sys.sunrise
     const sunrise = new Date(sunriseUnix * 1000)
+    const sunsetUnix = props.data.sys.sunset
+    const sunset = new Date(sunsetUnix * 1000)
 
     return (
         <div>
@@ -38,12 +40,17 @@ const DisplayWeather = (props) => {
                     <p>km</p>
                 </div>
                 <div className="otherWeatherCard">
+                    <p>Rain last 1h</p>
+                    <p><span className="weatherData">{props.data.rain['1h']}</span></p>
+                    <p>mm</p>
+                </div>
+                <div className="sunriseCard">
                     <p>Sunrise</p>
                     <p>{sunrise.toLocaleTimeString("en-GB", {timeStyle: 'short'})}</p>
                 </div>
-                <div className="otherWeatherCard">
+                <div className="sunsetCard">
                     <p>Sunset</p>
-                    <p></p>
+                    <p>{sunset.toLocaleTimeString("en-GB", {timeStyle: 'short'})}</p>
                 </div>
             </div>
         </div>
