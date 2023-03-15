@@ -2,6 +2,9 @@ import './displayWeather.css'
 
 const DisplayWeather = (props) => {
     console.log(props)
+    const sunriseUnix = props.data.sys.sunrise
+    const sunrise = new Date(sunriseUnix * 1000)
+
     return (
         <div>
             <div className="weatherContainer">
@@ -36,7 +39,7 @@ const DisplayWeather = (props) => {
                 </div>
                 <div className="otherWeatherCard">
                     <p>Sunrise</p>
-                    <p></p>
+                    <p>{sunrise.toLocaleTimeString("en-GB", {timeStyle: 'short'})}</p>
                 </div>
                 <div className="otherWeatherCard">
                     <p>Sunset</p>
