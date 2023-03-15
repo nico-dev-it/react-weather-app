@@ -1,0 +1,9 @@
+.weatherContainer {
+    display: flex;
+    gap: 20px;
+}
+
+.locationCard, .mainWeatherCard {
+    width: 200px;
+    height: 200px;
+}

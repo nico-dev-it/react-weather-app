@@ -1,6 +1,8 @@
+import './displayWeather.css'
+
 const DisplayWeather = () => {
     return (
-        <div>
+        <div className="weatherContainer">
             <div className="locationCard">
                 <p><span>City</span></p>
                 <p><span>Country</span></p>
