@@ -1,6 +1,10 @@
 import './displayWeather.css'
 import { BsFillSunriseFill } from 'react-icons/bs';
 import { BsFillSunsetFill } from 'react-icons/bs';
+import { MdOutlineVisibility } from 'react-icons/md';
+import { WiHumidity } from 'react-icons/wi';
+import { GiWindsock } from 'react-icons/gi';
+import { BsSpeedometer } from 'react-icons/bs';
 
 const DisplayWeather = (props) => {
     console.log(props)
@@ -33,17 +37,17 @@ const DisplayWeather = (props) => {
                     <img src={weatherIcon}/>
                 </div>
                 <div className="otherWeatherCard">
-                    <p>Wind</p>
+                    <p><GiWindsock/>  Wind</p>
                     <p><span class="weatherData">{(Math.round(props.data.wind.speed)*3600)/1000}</span></p>
                     <p>km/h</p>
                 </div>
                 <div className="otherWeatherCard">
-                    <p>Humidity</p>
+                    <p><WiHumidity/> Humidity </p>
                     <p><span className="weatherData">{props.data.main.humidity}</span></p>
                     <p>%</p>
                 </div>
                 <div className="otherWeatherCard">
-                    <p>Pressure</p>
+                    <p><BsSpeedometer/>  Pressure</p>
                     <p><span className="weatherData">{props.data.main.pressure}</span></p>
                     <p>hpa</p>
                 </div>
@@ -53,7 +57,7 @@ const DisplayWeather = (props) => {
                     <p>%</p>
                 </div>
                 <div className="otherWeatherCard">
-                    <p>Visibility</p>
+                    <p><MdOutlineVisibility />  Visibility</p>
                     <p><span className="weatherData">{Math.round(props.data.visibility) / 1000}</span></p>
                     <p>km</p>
                 </div>
