@@ -32,8 +32,8 @@ const DisplayWeather = (props) => {
                 </div>
                 <div className="otherWeatherCard">
                     <p>Wind</p>
-                    <p><span class="weatherData">{Math.round(props.data.wind.speed)}</span></p>
-                    <p>m/s</p>
+                    <p><span class="weatherData">{(Math.round(props.data.wind.speed)*3600)/1000}</span></p>
+                    <p>km/h</p>
                 </div>
                 <div className="otherWeatherCard">
                     <p>Humidity</p>
@@ -46,12 +46,17 @@ const DisplayWeather = (props) => {
                     <p>hpa</p>
                 </div>
                 <div className="otherWeatherCard">
+                    <p>☁ Cloud</p>
+                    <p><span className="weatherData">{props.data.clouds.all}</span></p>
+                    <p>%</p>
+                </div>
+                <div className="otherWeatherCard">
                     <p>Visibility</p>
                     <p><span className="weatherData">{Math.round(props.data.visibility) / 1000}</span></p>
                     <p>km</p>
                 </div>
                 <div className="otherWeatherCard">
-                    <p>Rain last 1h</p>
+                    <p>⛆ last 1h</p>
                     <p><span className="weatherData">{props.data.rain['1h']}</span></p>
                     <p>mm</p>
                 </div>
