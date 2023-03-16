@@ -70,6 +70,7 @@ const DisplayWeather = (props) => {
                     <p>{sunset.toLocaleTimeString("en-GB", {timeStyle: 'short'})}</p>
                     <BsFillSunsetFill />
                 </div>
+                <p>Weather data provided by:</p>
             </div>
         </div>
     )
