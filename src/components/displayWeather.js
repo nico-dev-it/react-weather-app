@@ -72,6 +72,7 @@ const DisplayWeather = (props) => {
                 </div>
                 <p>Weather data provided by:</p>
                 <p>openweathermap.org</p>
+
             </div>
         </div>
     )
