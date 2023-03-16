@@ -4,7 +4,7 @@ import './footer.css'
 const Footer = () => {
     return (
         <div className="footer">
-            <p><FaReact/> app - 2023</p>
+            <p><FaReact/> - 2023</p>
         </div>
     )
 }
