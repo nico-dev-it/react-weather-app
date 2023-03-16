@@ -71,6 +71,7 @@ const DisplayWeather = (props) => {
                     <BsFillSunsetFill />
                 </div>
                 <p>Weather data provided by:</p>
+                <p>openweathermap.org</p>
             </div>
         </div>
     )
