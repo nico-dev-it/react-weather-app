@@ -14,7 +14,6 @@ const DisplayWeather = (props) => {
     const sunset = new Date(sunsetUnix * 1000)
     const weatherIcon = "https://openweathermap.org/img/wn/" + `${props.data.weather[0].icon}` + ".png"
 
-
     return (
         <div>
             <div className="weatherContainer">
