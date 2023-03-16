@@ -61,11 +61,6 @@ const DisplayWeather = (props) => {
                     <p><span className="weatherData">{Math.round(props.data.visibility) / 1000}</span></p>
                     <p>km</p>
                 </div>
-                <div className="otherWeatherCard">
-                    <p>⛆ last 1h</p>
-                    <p><span className="weatherData">{props.data.rain['1h']}</span></p>
-                    <p>mm</p>
-                </div>
                 <div className="sunriseCard">
                     <p>Sunrise</p>
                     <p>{sunrise.toLocaleTimeString("en-GB", {timeStyle: 'short'})}</p>
